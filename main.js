@@ -2,7 +2,7 @@ x = 0;
 y = 0;
 screen_width=0;
 screen_height=0;
-applr="";
+apple="";
 speak_data="";
 to_number="";
 
@@ -41,7 +41,7 @@ recognition.onresult = function(event) {
 function setup() {
     screen_width=window.innerWidth;
     screen_height=window.innerHeight;
-    canvas=creatCanvas(screen_width,screen_height-150);
+    canvas=createCanvas(screen_width,screen_height-150);
     canvas.position(0,150);
 
 }
@@ -56,7 +56,7 @@ function draw() {
     for(var i=i;i<=to_number;i++){
       x=Math.floor(Math.random()*700);
       y=Math.floor(Math.random()*400);
-      imsge(apple,x,y,50,50);
+      image(apple,x,y,50,50);
 
     }
   }
@@ -72,5 +72,5 @@ function speak(){
     speak_data = "";
 }
 function preload(){
-  apple=loadimage("apple.png");
+  apple=loadImage("apple.png");
 }
