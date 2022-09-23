@@ -53,8 +53,8 @@ function draw() {
     draw_apple = "";
     speak_data=to_number+"Apples drawn";
     speak();
-    for(var i=i;i<=to_number;i++){
-      x=Math.floor(Math.random()*700);
+    for(var i=1;i<=to_number;i++){
+      x=Math.floor(Math.random()*screen_width);
       y=Math.floor(Math.random()*400);
       image(apple,x,y,50,50);
 
